@@ -7,12 +7,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="https://feeldreams.github.io/heihbd/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
   
 <head>
-<title>Happy Birthday</title>
+<title>Happy Birthday Sayangku</title>
 <link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
 <meta name="description" content="HTML Bucin Malas.id">
 <!-- 
@@ -29,7 +30,7 @@
 <body>
   
    <!-- Ganti Audio di sini -->
-   <audio src="https://feeldreams.github.io/djikhlas.mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="hbd.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
      <!-- Wallpaper --><img src="https://feeldreams.github.io/wp9.jpg" id="wallpaper"/><div id="beneranblur"></div>
@@ -69,14 +70,14 @@
 
        <p id="pesan2">Tunggu...</p>
        <!-- Pesan -->
-       <p id="pesan3">Ciee.. Ada yang Ultah Nih 🤣❤️</p>
-       <p id="pesan4">Happy Birthday, </p>
-       <p id="pesan5" class="gaya2">Nambah tua aja ya, hehe</p>
-       <p id="pesan6" class="gaya2">Moga panjang umur biar tiap tahun bisa traktirin aku wkwk 😆❤️</p>
+       <p id="pesan3">Ciee.. Ada yang ulang tahun Nih yee 🤣❤️</p>
+       <p id="pesan4">Happy Birthday Sayangku, </p>
+       <p id="pesan5" class="gaya2">Nambah tua aja sayangnya aku ini ya, hehe</p>
+       <p id="pesan6" class="gaya2">Moga panjang umur yaa wkwk 😆❤️</p>
        <p id="pesan7" class="gaya2">Sehat selalu ya!</p>
 
        <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu dapat menjadi pribadi yang lebih baik yaa.. 🥳❤️</p>
+       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu dapat menjadi pribadi yang lebih baik, dimudahkan segala urusannya, dan cepet selesai semua masalahnya. AMIN!!! 🥳❤️</p>
        <p id="pesan10" class="gaya2">Happy Level Up Day!! 🥳</p>
 
        <!-- Tombol Lanjut -->
@@ -103,16 +104,11 @@
   document.getElementById("kadoIn").onclick = function() {if(fungsiAwal==0){audio.play();fungsiAwal=1;kadoIn.style="transition:all .8s ease;transform:scale(10);opacity:0";wallpaper.style="transform: scale(1.5);";ket.style="display:none";setTimeout(initengahan,300);setTimeout(inipesan,500)}}
   
   async function inipesan(){
-    var { value: nama } = await swals.fire({
-           title: 'Masukin Nama Kamu', input: 'text',
-       });
-       if(nama && nama.length < 11){
+      nama = "Melda Maulida"
+       
          window.nama = nama;
          vketikhalo="Hai, " + nama + " ✨";
          mulainama();
-         } else {
-           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
-    }
   }
 
   //Variable Pertanyaan Akhir
@@ -121,9 +117,9 @@
   var tompositif = 'Mau';
   var tomnegatif = 'Engga';
     
-    async function menuju(){pesanwhatsapp = "Makasii udah ngucapin " + nama + " ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+    async function menuju(){pesanwhatsapp = "Terima Kasih sayangkuhhh ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=625959690173&text=" + pesanwhatsapp;}
 </script>
-<script src="https://malasid.github.io/html/hbd.js"></script>
+<script src="hbd.js"></script>
 <!-- Sampai Sini -->
 </body>
   </html>
